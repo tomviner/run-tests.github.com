@@ -17,17 +17,6 @@ curl -fLs https://run-tests.github.io/ | bash -s
 +   hidden folders and hidden scripts are ignored
 +   tests failed if script exited with non-zero status
 
-```
-.
-├── tests
-│   ├── subfolder
-│   │   └── <public>.ext    # executed if shebang exists
-│   ├── .hidden-subfolder   # ignored
-│   ├── <public>.ext        # executed if shebang exists
-│   └── .<hidden>.ext       # ignored
-└── .travis.yml             # script: curl -fLs https://shell-tests.github.io/ | bash -s
-```
-
 #### Examples
 ```
 .
