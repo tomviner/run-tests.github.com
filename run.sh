@@ -2,7 +2,7 @@
 { set +x; } 2>/dev/null
 
 # .travis.yml:
-# script: curl -fLs https://shell-tests.github.io/ | bash -s
+# script: curl -fLs https://run-tests.github.io/ | bash -s
 
 IFS=
 ! [ -e "tests" ] && echo "SKIP: tests/ NOT EXISTS" && exit
