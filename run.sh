@@ -18,5 +18,5 @@ count="$(echo "$scripts" | wc -l | tr -d ' ')"
 echo "tests/ - $count public scripts"
 [[ -n "$scripts" ]] && while IFS= read f; do
     ( set -x; chmod +x "$f" ) || exit
-    ( set -x; "$@" ) || exit
+    ( set -x; "$f" ) || exit
 done <<< "$scripts";:
