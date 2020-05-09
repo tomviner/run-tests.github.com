@@ -33,6 +33,8 @@ curl -fLs https://run-tests.github.io/ | bash -s
 script: curl -fLs https://run-tests.github.io/ | bash -s
 ```
 
+Use a `before_script:` line to install any test requirements.
+
 #### Pull Requests
 pull requests are welcome :)
 
